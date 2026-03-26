@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #1e293b;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            color: #94a3b8;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #38bdf8;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #38bdf8;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #38bdf8;
+            color: #000;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e293b;
+            color: #94a3b8;
+        }
+
+        button {
+            background: #38bdf8;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #0ea5e9;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Your Name</h1>
+    <p>12th Grade Student | Business Class</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            Hello! I am a 12th grade student studying in the business class at Ulaanbaatar Elite School.
+            I am interested in business, entrepreneurship, and personal development. 
+            I enjoy learning new skills and working on creative projects.
+        </p>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <div class="card">
+        <h3>Ulaanbaatar Elite School</h3>
+        <p>12th Grade - Business Class</p>
+        <p>Focused on business studies, economics, and leadership skills.</p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="card skills">
+        <span>Communication</span>
+        <span>Leadership</span>
+        <span>Teamwork</span>
+        <span>Problem Solving</span>
+        <span>Basic HTML & CSS</span>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: your@email.com</p>
+        <p>Phone: +976 xxxx xxxx</p>
+        <button onclick="showMessage()">Say Hello</button>
+        <p id="message"></p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Your Name. All rights reserved.</p>
+</footer>
+
+<script>
+    function showMessage() {
+        document.getElementById("message").innerText = "Thanks for visiting my portfolio!";
+    }
+</script>
+
+</body>
+</html>
